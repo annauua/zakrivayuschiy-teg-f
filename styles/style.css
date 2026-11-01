@@ -14,13 +14,11 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-weight: var(--card-text-weight);
+  font-variation-settings: 'wght' var(--card-text-weight);
   background-image: var(--page-gradient);
   background-size: cover;
   background-attachment: fixed;
 }
-
-/* в .page использовала font-weight, вместо font-variation-settings, тк с ним шрифт не отображался в браузере */
 
 .main {
   display: grid;
@@ -77,7 +75,7 @@
 
 .card_title {
   font-family: var(--main-font);
-  font-weight: var(--card-title-weight);
+  font-variation-settings: 'wght' var(--card-title-weight);
   font-size: var(--card-text-size);
   color: black;
   border-bottom: 2px solid black;
@@ -87,7 +85,6 @@
 
 .card_description {
   font-family: var(--main-font);
-  font-weight: var(--card-text-weight);
   font-size: var(--card-text-size);
   line-height: 1.258rem;
   color: black;
@@ -254,7 +251,7 @@
 }
 
 .img_im_fine {
-  filter: grayscale(1);
+  filter: grayscale(1) contrast(1.5) blur(1px);
 }
 
 .img_fire {
